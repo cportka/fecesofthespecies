@@ -4,8 +4,12 @@
 body,
 main,
 container {
+    overflow: hidden;
     height: 100%;
     margin: 0;
+}
+.img-responsive {
+    display: inline;
 }
 .middle-box {
     display: table;
@@ -30,6 +34,7 @@ h2 {
 }
 .fullScreen {
     position: absolute;
+    background: #000;
     top: 0;
     left: 0;
     width: 100%;
@@ -41,8 +46,8 @@ h2 {
     background-repeat: repeat-x;
     border-color: #dcdcdc;
     position: relative;
-    left: 25%;
-    width: 50%;
+    left: 30%;
+    width: 40%;
 }
 .input-group {
     left: 35%;

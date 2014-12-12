@@ -40,7 +40,6 @@ var answer5 = "";
 
 function answer1Input() {
     answer1 = document.getElementById("question1");
-    alert('answer1Input called');
 }
 
 function answer2Input() {
