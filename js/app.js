@@ -39,21 +39,21 @@ var answer4 = "";
 var answer5 = "";
 
 function answer1Input() {
-    answer1 = document.getElementById("question1");
+    answer1 = $("#question1").val();
 }
 
 function answer2Input() {
-    answer2 = document.getElementById("question2");
+    answer2 = $("#question2").val();
 }
 
 function answer3Input() {
-    answer3 = document.getElementById("question3");
+    answer3 = $("#question3").val();
 }
 
 function answer4Input() {
-    answer4 = document.getElementById("question4");
+    answer4 = $("#question4").val();
 }
 
 function answer5Input() {
-    answer5 = document.getElementById("question5");
+    answer5 = $("#question5").val();
 }

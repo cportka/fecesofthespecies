@@ -1,12 +1,31 @@
-<div class="middle-box">
+<div class="middle-box" onload="results();">
     <div class="vertical-align-box text-center">
         <h1>
                 <span class="fade-in fast">Congratulations</span>
         </h1>
         <div class="well fade-in slow">
             <h2 id="results">
-                You scored between 0 and 5 correct.  You took the test, yes you did.
+                You scored between <b></b> out of 5 correct.  You took the test, yes you did.
             </h2>
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    var correct = 0;
+    if (answer1 == "cow") {
+        correct++;
+    }
+    if (answer2 == "elephant") {
+        correct++;
+    }
+    if (answer3 == "lizard") {
+        correct++;
+    }
+    if (answer4 == "roach") {
+        correct++;
+    }
+    if (answer5 == "human") {
+        correct++;
+    }
+    $('b').html(correct);
+</script>

@@ -17,7 +17,7 @@ container {
     width: 100%
 }
 .middle-box img {
-    margin-top: -10px;   
+    margin-top: -10px;
 }
 .vertical-align-box {
     vertical-align: middle;
@@ -33,7 +33,7 @@ h1 {
 h2 {
     color: #AC7955;
     font-family: "Helvetica";
-    font-size: 20px;
+    font-size: 18px;
 }
 h3 {
     color: sandybrown;
@@ -54,12 +54,18 @@ h3 {
     background-repeat: repeat-x;
     border-color: #dcdcdc;
     position: relative;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    /*
     left: 30%;
     width: 40%;
+    */
 }
 .input-group {
-    left: 35%;
-    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
     margin-top: 10px;
 }
 @-webkit-keyframes fadeIn {
@@ -121,134 +127,48 @@ h3 {
     -moz-animation-delay: 5.0s;
     animation-delay: 5.0s;
 }
-
 .feces-animation {
-	animation-duration: 1.5s;	
-	-webkit-animation-duration: 1.5s;
-
+    animation-delay: 2.5s;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-name: feces-animation;
+    -webkit-animation-delay: 2.5s;
+    -webkit-animation-duration: 2.5s;
     -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-
-	animation-timing-function: ease-in-out;	
-	-webkit-animation-timing-function: ease-in-out;		
-
-	visibility: visible !important;	
-
+    -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-name: feces-animation;
-          animation-name: feces-animation;
+    visibility: visible !important;
 }
-
 @keyframes feces-animation {
     0% {
-/*
+        transform-origin: center;
         -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, -300deg);
-            transform: rotate3d(0, 0, 1, -300deg);
-        */
         transform: rotate(-300deg) scale(0);
         -webkit-transform: rotate(-300deg) scale(0);
-		opacity: 0.2;		
-	}
-	60% {
-		transform: scale(1.1);	
-	}
-	80% {
-		transform: scale(0.9);
-		opacity: 1;	
-	}	
-	100% {
-        transform: rotate(-300deg) scale(1);
-        -webkit-transform: rotate(-300deg) scale(1);
-		opacity: 1;
-        /*
+        opacity: 0.2;
+    }
+    100% {
+        transform-origin: center;
         -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: none;
-            transform: none;
-        */
-	}
-
+        transform: none;
+        -webkit-transform: none;
+        opacity: 1;
+    }
 }
 @-webkit-keyframes feces-animation {
     0% {
-/*
+        transform-origin: center;
         -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, -300deg);
-            transform: rotate3d(0, 0, 1, -300deg);
-        */
         transform: rotate(-300deg) scale(0);
         -webkit-transform: rotate(-300deg) scale(0);
-		opacity: 0.2;		
-	}
-	60% {
-		transform: scale(1.1);	
-	}
-	80% {
-		transform: scale(0.9);
-		opacity: 1;	
-	}	
-	100% {
-        transform: rotate(-300deg) scale(1);
-        -webkit-transform: rotate(-300deg) scale(1);
-		opacity: 1;
-        /*
+        opacity: 0.2;
+    }
+    100% {
+        transform-origin: center;
         -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: none;
-            transform: none;
-        */
-	}
-}
-
-.animated {
-  -webkit-animation-delay: 3.0s;
-  -moz-animation-delay: 3.0s;
-  animation-delay: 3.0s;
-
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-@-webkit-keyframes rotateIn {
-  0% {
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, -300deg);
-            transform: rotate3d(0, 0, 1, -300deg);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: none;
-            transform: none;
-    opacity: 1;
-  }
-}
-
-@keyframes rotateIn {
-  0% {
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, -300deg);
-            transform: rotate3d(0, 0, 1, -300deg);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: none;
-            transform: none;
-    opacity: 1;
-  }
-}
-
-.rotateIn {
-  -webkit-animation-name: rotateIn;
-          animation-name: rotateIn;
+        transform: none;
+        -webkit-transform: none;
+        opacity: 1;
+    }
 }
